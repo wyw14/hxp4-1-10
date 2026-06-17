@@ -21,6 +21,28 @@
       </div>
     </div>
 
+    <div class="difficulty-panel">
+      <div class="difficulty-header">
+        <span class="difficulty-label">⚡ 动态难度</span>
+        <span id="difficulty-level" class="difficulty-level">标准</span>
+      </div>
+      <div class="difficulty-info">
+        <div class="speed-indicator">
+          <span class="speed-label">亮灯速度</span>
+          <span id="speed-value" class="speed-value">100%</span>
+        </div>
+        <div class="recent-scores">
+          <span class="recent-label">最近三局</span>
+          <div id="recent-scores-list" class="recent-scores-list">
+            <span class="recent-score empty">-</span>
+            <span class="recent-score empty">-</span>
+            <span class="recent-score empty">-</span>
+          </div>
+        </div>
+      </div>
+      <div id="difficulty-reason" class="difficulty-reason">暂无数据，使用默认速度</div>
+    </div>
+
     <div id="game-status" class="game-status">点击开始按钮开始游戏</div>
 
     <div class="game-board">
@@ -40,6 +62,7 @@
       <p>2. 按相同顺序点击按钮</p>
       <p>3. 每过一关，序列增加一个</p>
       <p>4. 按错一次即游戏结束</p>
+      <p>5. 系统根据最近三局表现自动调整难度：连续进步加快速度，连续低分放慢速度</p>
     </div>
   </div>
 
